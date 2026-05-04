@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { HelpCircle } from "lucide-react"
 
 const faqs = [
   {
@@ -52,9 +53,16 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <section id="faq" className="py-20 md:py-28 bg-background scroll-mt-20">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-20 md:py-28 bg-background scroll-mt-20 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-accent/5 via-highlight/5 to-primary/5 rounded-full blur-3xl" />
+
+      <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-highlight/10 text-highlight text-sm font-semibold rounded-full mb-4">
+            <HelpCircle className="h-4 w-4" />
+            Got Questions?
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
             Frequently Asked Questions
           </h2>
@@ -63,18 +71,24 @@ export function FAQSection() {
           </p>
         </div>
 
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-border">
-              <AccordionTrigger className="text-left text-foreground hover:text-accent hover:no-underline py-5">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <div className="bg-card/50 backdrop-blur-sm rounded-2xl border border-border p-6 md:p-8 shadow-sm">
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`} 
+                className="border-border last:border-b-0"
+              >
+                <AccordionTrigger className="text-left text-foreground hover:text-accent hover:no-underline py-5 text-base">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
     </section>
   )
