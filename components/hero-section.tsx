@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Shield } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -28,10 +28,6 @@ export function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-primary-foreground/90 text-sm font-medium mb-6 border border-white/20">
-              <Shield className="h-4 w-4 text-accent" />
-              Trusted by 50+ European startups
-            </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight tracking-tight text-balance">
               GDPR compliance and{" "}
               <span className="text-accent">outsourced DPO</span> services for modern tech businesses
@@ -52,9 +48,8 @@ export function HeroSection() {
               </Button>
               <Button
                 asChild
-                variant="outline"
                 size="lg"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 py-6 backdrop-blur-sm"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 py-6 shadow-lg shadow-primary/25 border border-white/20"
               >
                 <Link href="#services">Learn More</Link>
               </Button>
@@ -64,18 +59,14 @@ export function HeroSection() {
           {/* Stats cards */}
           <div className="hidden lg:grid grid-cols-2 gap-4">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-              <div className="text-4xl font-bold text-accent mb-2">500+</div>
-              <div className="text-primary-foreground/80 text-sm">Compliance Projects</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 mt-8">
               <div className="text-4xl font-bold text-highlight mb-2">100%</div>
               <div className="text-primary-foreground/80 text-sm">Client Satisfaction</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-              <div className="text-4xl font-bold text-white mb-2">15+</div>
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 mt-8">
+              <div className="text-4xl font-bold text-white mb-2">7+</div>
               <div className="text-primary-foreground/80 text-sm">Years Experience</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 mt-8">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
               <div className="text-4xl font-bold text-accent mb-2">EU</div>
               <div className="text-primary-foreground/80 text-sm">Wide Coverage</div>
             </div>
