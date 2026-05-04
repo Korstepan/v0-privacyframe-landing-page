@@ -14,7 +14,7 @@ const pricingPlans = [
       "Gap analysis summary",
       "Priority action recommendations",
     ],
-    color: "border-t-accent",
+    featured: true,
   },
   {
     title: "Compliance Starter",
@@ -25,19 +25,16 @@ const pricingPlans = [
       "Core policy documents",
       "3 months email support",
     ],
-    color: "border-t-highlight",
   },
   {
     title: "Outsourced DPO",
     description: "Ongoing DPO services for established businesses",
-    price: "From €800/mo",
+    price: "From €500/mo",
     features: [
       "Named Data Protection Officer",
       "Regular compliance reviews",
       "Regulatory communication handling",
     ],
-    featured: true,
-    color: "border-t-accent",
   },
   {
     title: "Data Mapping Project",
@@ -48,7 +45,6 @@ const pricingPlans = [
       "Visual data flow diagrams",
       "Risk assessment included",
     ],
-    color: "border-t-chart-5",
   },
   {
     title: "RoPA & DPIA Bundle",
@@ -59,7 +55,6 @@ const pricingPlans = [
       "Data Protection Impact Assessments",
       "Annual update service",
     ],
-    color: "border-t-chart-4",
   },
   {
     title: "Enterprise Package",
@@ -70,7 +65,6 @@ const pricingPlans = [
       "Dedicated compliance team",
       "Priority SLA support",
     ],
-    color: "border-t-primary",
   },
 ]
 
@@ -109,10 +103,10 @@ export function PricingSection() {
           {pricingPlans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative group transition-all duration-300 border-t-4 ${plan.color} bg-card/80 backdrop-blur-sm hover:-translate-y-2 ${
+              className={`relative group transition-all duration-300 border border-border bg-card/80 backdrop-blur-sm hover:-translate-y-2 ${
                 plan.featured
                   ? "ring-2 ring-accent shadow-xl shadow-accent/10"
-                  : "hover:shadow-xl hover:shadow-accent/5"
+                  : "hover:shadow-xl hover:shadow-accent/5 hover:border-accent/50"
               }`}
             >
               {plan.featured && (

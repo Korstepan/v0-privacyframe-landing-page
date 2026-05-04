@@ -59,8 +59,8 @@ export function FAQSection() {
 
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-highlight/10 text-highlight text-sm font-semibold rounded-full mb-4">
-            <HelpCircle className="h-4 w-4" />
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-highlight/15 text-foreground text-sm font-semibold rounded-full mb-4 border border-highlight/30">
+            <HelpCircle className="h-4 w-4 text-highlight" />
             Got Questions?
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
