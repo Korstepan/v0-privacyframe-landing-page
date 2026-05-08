@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "How do I handle data mapping for my company?",
-    answer: "Data mapping involves documenting where personal data comes from, how it flows through your systems, where it's stored, who can access it, and where it goes. We help you create visual diagrams and detailed documentation that serves as the foundation for compliance.",
+    answer: "Data mapping involves documenting where personal data comes from, how it flows through your systems, where it is stored, who can access it, and where it goes. We help you create visual diagrams and detailed documentation that serves as the foundation for compliance.",
   },
   {
     question: "What should I do if we use third-party tools like analytics or CRM?",
@@ -39,11 +39,11 @@ const faqs = [
   },
   {
     question: "What's the difference between a controller and a processor?",
-    answer: "A controller determines why and how personal data is processed (your company, usually). A processor processes data on behalf of the controller (like a cloud provider or analytics service). Different obligations apply to each role under GDPR.",
+    answer: "A controller determines why and how personal data is processed – your company, usually. A processor processes data on behalf of the controller – like a cloud provider or analytics service. Different obligations apply to each role under GDPR.",
   },
   {
     question: "How long does it take to become GDPR compliant?",
-    answer: "Timeline varies based on your current state, data complexity, and organizational size. A basic compliance framework can often be established in 4-8 weeks. Full compliance with all documentation and processes typically takes 2-4 months for small to medium companies.",
+    answer: "Timeline varies based on your current state, data complexity, and organizational size. A basic compliance framework can often be established in 4 – 8 weeks. Full compliance with all documentation and processes typically takes 2 – 4 months for small to medium companies.",
   },
   {
     question: "Can you help with compliance beyond GDPR?",

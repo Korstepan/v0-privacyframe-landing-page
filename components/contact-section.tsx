@@ -17,7 +17,7 @@ export function ContactSection() {
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm text-primary-foreground text-sm font-semibold rounded-full mb-6 border border-white/20">
-          <Sparkles className="h-4 w-4 text-highlight" />
+          <Sparkles className="h-4 w-4 text-accent" />
           Start Your Compliance Journey
         </span>
         

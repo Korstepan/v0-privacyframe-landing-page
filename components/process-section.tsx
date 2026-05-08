@@ -5,7 +5,7 @@ const steps = [
     icon: MessageSquare,
     step: "01",
     title: "Quick Intake",
-    description: "We start with a focused conversation to understand your business, data flows, and compliance goals. No lengthy questionnaires—just a practical discussion.",
+    description: "We start with a focused conversation to understand your business, data flows, and compliance goals. No lengthy questionnaires – just a practical discussion.",
     color: "bg-accent",
   },
   {
@@ -19,7 +19,7 @@ const steps = [
     icon: FileCheck,
     step: "03",
     title: "Tailored Deliverables",
-    description: "We create the documents, policies, and processes you need—customized to your specific situation, not generic templates.",
+    description: "We create the documents, policies, and processes you need – customized to your specific situation, not generic templates.",
     color: "bg-chart-5",
   },
   {

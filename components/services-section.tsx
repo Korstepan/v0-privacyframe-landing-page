@@ -18,7 +18,7 @@ const services = [
   {
     icon: Database,
     title: "Data Mapping",
-    description: "Thorough documentation of your data flows—where data comes from, how it's processed, and where it goes. Essential for compliance.",
+    description: "Thorough documentation of your data flows – where data comes from, how it is processed, and where it goes. Essential for compliance.",
     color: "bg-highlight",
   },
   {

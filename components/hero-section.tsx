@@ -59,16 +59,16 @@ export function HeroSection() {
           {/* Stats cards */}
           <div className="hidden lg:grid grid-cols-2 gap-4">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-              <div className="text-4xl font-bold text-highlight mb-2">100%</div>
-              <div className="text-primary-foreground/80 text-sm">Client Satisfaction</div>
+              <div className="text-4xl font-bold text-accent mb-2">CIPP/E</div>
+              <div className="text-primary-foreground/80 text-sm">Certified Professional</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 mt-8">
               <div className="text-4xl font-bold text-white mb-2">7+</div>
               <div className="text-primary-foreground/80 text-sm">Years Experience</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-              <div className="text-4xl font-bold text-accent mb-2">EU</div>
-              <div className="text-primary-foreground/80 text-sm">Wide Coverage</div>
+              <div className="text-3xl font-bold text-highlight mb-2">Global</div>
+              <div className="text-primary-foreground/80 text-sm">EU, US, CIS & Asia</div>
             </div>
           </div>
         </div>

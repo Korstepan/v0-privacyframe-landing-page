@@ -4,7 +4,7 @@ const reasons = [
   {
     icon: Shield,
     title: "Data Processing from Day One",
-    description: "Startups collect and process personal data from their very first user. Whether it's email addresses, analytics, or user preferences, you're handling data that falls under GDPR from the start.",
+    description: "Startups collect and process personal data from their very first user. Whether it is email addresses, analytics, or user preferences, you are handling data that falls under GDPR from the start.",
     color: "from-accent to-accent/70",
     iconBg: "bg-accent",
   },
@@ -18,7 +18,7 @@ const reasons = [
   {
     icon: Users,
     title: "Trust Drives Growth",
-    description: "Enterprise clients, investors, and partners increasingly require demonstrable compliance. Proper privacy practices aren't just legal requirements—they're competitive advantages that unlock new opportunities.",
+    description: "Enterprise clients, investors, and partners increasingly require demonstrable compliance. Proper privacy practices are not just legal requirements – they are competitive advantages that unlock new opportunities.",
     color: "from-primary to-primary/70",
     iconBg: "bg-primary",
   },
@@ -40,7 +40,7 @@ export function WhyPrivacySection() {
             Why Privacy Matters
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-            In today&apos;s data-driven economy, privacy compliance isn&apos;t optional—it&apos;s essential for sustainable growth.
+            In today&apos;s data-driven economy, privacy compliance is not optional – it is essential for sustainable growth. Our CIPP/E certified team brings extensive experience working with IT companies to help you succeed.
           </p>
         </div>
 

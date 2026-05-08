@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Shield, Linkedin, Mail } from "lucide-react"
 
 export function Footer() {
@@ -77,10 +78,19 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-primary-foreground/60">
-            © {currentYear} PrivacyFrame. All rights reserved.
-          </p>
+        <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-4">
+            <Image
+              src="/images/cippe-seal.png"
+              alt="CIPP/E Certified Information Privacy Professional"
+              width={60}
+              height={60}
+              className="opacity-90"
+            />
+            <p className="text-sm text-primary-foreground/60">
+              © {currentYear} PrivacyFrame. All rights reserved.
+            </p>
+          </div>
           <nav className="flex items-center gap-6">
             <Link
               href="/privacy"
