@@ -67,7 +67,7 @@ export function HeroSection() {
               <div className="text-primary-foreground/80 text-sm">Years Experience</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-              <div className="text-3xl font-bold text-highlight mb-2">Global</div>
+              <div className="text-3xl font-bold text-sky-300 mb-2">Global</div>
               <div className="text-primary-foreground/80 text-sm">EU, US, CIS & Asia</div>
             </div>
           </div>

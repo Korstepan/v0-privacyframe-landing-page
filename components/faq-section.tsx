@@ -53,7 +53,7 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <section id="faq" className="py-20 md:py-28 bg-background scroll-mt-20 relative overflow-hidden">
+    <section id="faq" className="py-14 md:py-20 bg-background scroll-mt-20 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-accent/5 via-highlight/5 to-primary/5 rounded-full blur-3xl" />
 

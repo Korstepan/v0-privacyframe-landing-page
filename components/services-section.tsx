@@ -43,7 +43,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="relative py-20 md:py-28 scroll-mt-20 overflow-hidden">
+    <section id="services" className="relative py-14 md:py-20 scroll-mt-20 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

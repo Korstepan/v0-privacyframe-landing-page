@@ -4,7 +4,7 @@ import { Mail, ArrowRight, Calendar, Sparkles } from "lucide-react"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="relative py-20 md:py-28 scroll-mt-20 overflow-hidden">
+    <section id="contact" className="relative py-14 md:py-20 scroll-mt-20 overflow-hidden">
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-accent/80" />
       

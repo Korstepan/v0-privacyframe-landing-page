@@ -26,7 +26,7 @@ const reasons = [
 
 export function WhyPrivacySection() {
   return (
-    <section className="py-20 md:py-28 bg-secondary relative overflow-hidden">
+    <section className="py-14 md:py-20 bg-secondary relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-highlight/5 rounded-full blur-3xl" />

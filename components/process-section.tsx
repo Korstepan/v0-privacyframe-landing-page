@@ -33,7 +33,7 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section id="process" className="py-20 md:py-28 bg-background scroll-mt-20 relative overflow-hidden">
+    <section id="process" className="py-14 md:py-20 bg-background scroll-mt-20 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(96,181,181,0.08)_0%,transparent_50%)]" />
       
