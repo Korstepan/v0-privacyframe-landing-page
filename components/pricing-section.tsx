@@ -14,17 +14,17 @@ const pricingPlans = [
       "Gap analysis summary",
       "Priority action recommendations",
     ],
-    featured: true,
   },
   {
     title: "Compliance Starter",
     description: "Essential compliance package for growing companies",
-    price: "From €1,500",
+    price: "From €1,300",
     features: [
       "Full GDPR audit",
       "Core policy documents",
       "3 months email support",
     ],
+    featured: true,
   },
   {
     title: "Outsourced DPO",
@@ -39,7 +39,7 @@ const pricingPlans = [
   {
     title: "Data Mapping Project",
     description: "Comprehensive data flow documentation",
-    price: "From €2,000",
+    price: "From €1,500",
     features: [
       "Complete data inventory",
       "Visual data flow diagrams",
@@ -49,12 +49,33 @@ const pricingPlans = [
   {
     title: "RoPA & DPIA Bundle",
     description: "Essential documentation package",
-    price: "From €1,800",
+    price: "From €2,000",
     features: [
       "Records of Processing Activities",
       "Data Protection Impact Assessments",
       "Annual update service",
     ],
+  },
+  {
+    title: "Website Legal Documentation",
+    description: "Complete legal documents for your online presence",
+    price: "From €700",
+    features: [
+      "Terms of Use & Service",
+      "Privacy & Cookie Policies",
+      "Acceptable Use Policy",
+    ],
+  },
+  {
+    title: "General Legal Support",
+    description: "Corporate, contracts, and IP advisory services",
+    price: "From €150/h",
+    features: [
+      "Contract drafting & review",
+      "Corporate governance advice",
+      "IP protection guidance",
+    ],
+    highlight: true,
   },
   {
     title: "Enterprise Package",
