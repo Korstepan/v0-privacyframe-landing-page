@@ -35,8 +35,8 @@ const services = [
   },
   {
     icon: Scale,
-    title: "General Legal Consulting",
-    description: "Broader legal guidance on privacy-related contracts, vendor agreements, and international data transfers.",
+    title: "General Legal Support",
+    description: "Corporate, contract, and IP guidance for growing businesses that need support beyond privacy compliance.",
     color: "bg-chart-3",
   },
 ]
@@ -58,13 +58,13 @@ export function ServicesSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 bg-accent/10 text-accent text-sm font-semibold rounded-full mb-4">
-            What We Offer
+            What we offer
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            Our Services
+            Our services
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-            Comprehensive privacy solutions tailored for tech companies and startups.
+            Practical privacy and legal support tailored for startups, online platforms, and growing tech businesses.
           </p>
         </div>
 
