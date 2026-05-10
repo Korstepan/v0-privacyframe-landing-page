@@ -57,8 +57,8 @@ const pricingPlans = [
     ],
   },
   {
-    title: "Website Legal Documentation",
-    description: "Public-facing legal wording and policies for your website, product, or platform.",
+    title: "Website/App Docs",
+    description: "Public-facing legal wording and policies for your website, app, or platform.",
     price: "From €700",
     features: [
       "Terms of Use or Terms of Service",
@@ -92,7 +92,6 @@ const pricingPlans = [
 export function PricingSection() {
   return (
     <section id="pricing" className="relative py-14 md:py-20 scroll-mt-20 overflow-hidden">
-      {/* Background Image */}
       <div className="absolute inset-0">
         <Image
           src="/images/pricing-bg.jpg"
@@ -103,7 +102,6 @@ export function PricingSection() {
         <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/98 to-secondary" />
       </div>
 
-      {/* Decorative elements */}
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-highlight/10 rounded-full blur-3xl" />
 
@@ -120,11 +118,11 @@ export function PricingSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {pricingPlans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative group transition-all duration-300 border bg-card/80 backdrop-blur-sm hover:-translate-y-2 ${
+              className={`relative flex flex-col h-full group transition-all duration-300 border bg-card/80 backdrop-blur-sm hover:-translate-y-2 ${
                 plan.featured
                   ? "border-accent ring-2 ring-accent shadow-xl shadow-accent/10"
                   : plan.highlight
@@ -143,16 +141,18 @@ export function PricingSection() {
                   Beyond privacy
                 </div>
               )}
-              <CardHeader className="pb-4">
-                <CardTitle className="text-lg font-semibold text-card-foreground">
+
+              <CardHeader className="pb-4 min-h-[120px] flex flex-col justify-start">
+                <CardTitle className="text-lg font-semibold text-card-foreground min-h-[56px]">
                   {plan.title}
                 </CardTitle>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground min-h-[60px]">
                   {plan.description}
                 </p>
               </CardHeader>
-              <CardContent>
-                <div className="mb-6">
+
+              <CardContent className="flex flex-col flex-1">
+                <div className="mb-6 min-h-[72px]">
                   <span className="text-3xl font-bold text-foreground">
                     {plan.price}
                   </span>
@@ -162,7 +162,8 @@ export function PricingSection() {
                     </p>
                   )}
                 </div>
-                <ul className="space-y-3 mb-6">
+
+                <ul className="space-y-3 mb-8 flex-1">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
                       <div className={`flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5 ${plan.highlight ? "bg-amber-100" : "bg-accent/10"}`}>
@@ -174,10 +175,11 @@ export function PricingSection() {
                     </li>
                   ))}
                 </ul>
+
                 <Button
                   asChild
                   variant={plan.featured ? "default" : "outline"}
-                  className={`w-full group/btn ${plan.featured ? "bg-accent hover:bg-accent/90" : plan.highlight ? "border-amber-400 text-amber-800 hover:bg-amber-50" : ""}`}
+                  className={`w-full mt-auto group/btn ${plan.featured ? "bg-accent hover:bg-accent/90" : plan.highlight ? "border-amber-400 text-amber-800 hover:bg-amber-50" : ""}`}
                 >
                   <Link href="#contact">
                     Get started
