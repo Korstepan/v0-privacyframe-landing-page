@@ -18,11 +18,11 @@ export function ContactSection() {
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm text-primary-foreground text-sm font-semibold rounded-full mb-6 border border-white/20">
           <Sparkles className="h-4 w-4 text-accent" />
-          Start Your Compliance Journey
+          Start your compliance journey
         </span>
         
         <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground tracking-tight">
-          Ready to Get Compliant?
+          Ready to get compliant?
         </h2>
         <p className="mt-6 text-lg md:text-xl text-primary-foreground/85 leading-relaxed max-w-2xl mx-auto">
           Let&apos;s discuss your privacy needs and create a tailored compliance roadmap for your business.
@@ -32,11 +32,11 @@ export function ContactSection() {
           <Button
             asChild
             size="lg"
-            className="bg-white text-primary hover:bg-white/90 text-base px-8 py-6 shadow-xl shadow-black/10"
+            className="bg-accent text-white hover:bg-accent/90 text-base px-8 py-6 shadow-xl shadow-black/10"
           >
-            <Link href="mailto:sk@privacyframe.io">
+            <Link href="https://cal.com" target="_blank" rel="noopener noreferrer">
               <Calendar className="mr-2 h-5 w-5" />
-              Book a Consultation
+              Book a consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
