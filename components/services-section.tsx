@@ -43,42 +43,40 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="relative py-14 md:py-20 scroll-mt-20 overflow-hidden">
-      {/* Background Image */}
+    <section id="services" className="relative py-16 md:py-28 scroll-mt-20 overflow-hidden">
       <div className="absolute inset-0">
         <Image
           src="/images/services-bg.jpg"
           alt=""
           fill
-          className="object-cover opacity-30"
+          className="object-cover opacity-25"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       </div>
 
+      <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl" />
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 bg-accent/10 text-accent text-sm font-semibold rounded-full mb-4">
-            What we offer
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
             Our services
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
             Practical privacy and legal support tailored for startups, online platforms, and growing tech businesses.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group bg-card/80 backdrop-blur-sm border-border hover:border-accent/50 hover:shadow-xl hover:shadow-accent/5 transition-all duration-300 hover:-translate-y-1"
+              className="group bg-card/60 backdrop-blur-xl border border-white/5 hover:border-accent/40 hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 rounded-3xl overflow-hidden"
             >
-              <CardContent className="p-6">
-                <div className={`inline-flex items-center justify-center w-14 h-14 rounded-xl ${service.color} text-white mb-5 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="h-7 w-7" />
+              <CardContent className="p-8">
+                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${service.color} text-white mb-6 shadow-xl group-hover:scale-110 transition-transform duration-500`}>
+                  <service.icon className="h-8 w-8" />
                 </div>
-                <h3 className="text-lg font-semibold text-card-foreground mb-2">
+                <h3 className="text-xl font-semibold text-card-foreground mb-3 tracking-tight">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
