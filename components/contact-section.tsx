@@ -5,10 +5,8 @@ import { Mail, ArrowRight, Calendar, Sparkles } from "lucide-react"
 export function ContactSection() {
   return (
     <section id="contact" className="relative py-14 md:py-20 scroll-mt-20 overflow-hidden">
-      {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-accent/80" />
       
-      {/* Animated shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-highlight/20 rounded-full blur-3xl animate-pulse delay-700" />
@@ -25,7 +23,7 @@ export function ContactSection() {
           Ready to get compliant?
         </h2>
         <p className="mt-6 text-lg md:text-xl text-primary-foreground/85 leading-relaxed max-w-2xl mx-auto">
-          Let&apos;s discuss your privacy needs and create a tailored compliance roadmap for your business.
+          Let&apos;s discuss your legal needs and create a tailored compliance roadmap for your business.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
@@ -51,10 +49,6 @@ export function ContactSection() {
             sk@privacyframe.io
           </a>
         </div>
-
-        <p className="mt-6 text-sm text-primary-foreground/60">
-          Typically respond within 24 hours on business days.
-        </p>
       </div>
     </section>
   )
