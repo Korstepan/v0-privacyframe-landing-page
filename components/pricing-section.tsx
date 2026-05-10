@@ -7,84 +7,84 @@ import { Check, ArrowRight, Sparkles } from "lucide-react"
 const pricingPlans = [
   {
     title: "GDPR Quick Check",
-    description: "Initial assessment for early-stage startups",
+    description: "Initial privacy review for early-stage teams that need clear priorities fast.",
     price: "From €500",
     features: [
-      "2-hour consultation session",
+      "Focused consultation session",
       "Gap analysis summary",
       "Priority action recommendations",
     ],
   },
   {
     title: "Compliance Starter",
-    description: "Essential compliance package for growing companies",
+    description: "Essential GDPR setup for growing startups and small tech companies.",
     price: "From €1,300",
     features: [
       "Full GDPR audit",
-      "Core policy documents",
-      "3 months email support",
+      "Core privacy documents",
+      "Implementation guidance",
     ],
     featured: true,
   },
   {
     title: "Outsourced DPO",
-    description: "Ongoing DPO services for established businesses",
+    description: "Ongoing privacy guidance without building an in-house function.",
     price: "From €500/mo",
     features: [
-      "Named Data Protection Officer",
-      "Regular compliance reviews",
-      "Regulatory communication handling",
+      "DPO role coverage",
+      "Day-to-day advisory support",
+      "Regulator and incident readiness",
     ],
   },
   {
     title: "Data Mapping Project",
-    description: "Comprehensive data flow documentation",
+    description: "A clear view of what data you process, where it goes, and why.",
     price: "From €1,500",
     features: [
-      "Complete data inventory",
-      "Visual data flow diagrams",
-      "Risk assessment included",
+      "Systems and vendor review",
+      "Data categories and purposes",
+      "Data flow overview and risks",
     ],
   },
   {
     title: "RoPA & DPIA Bundle",
-    description: "Essential documentation package",
+    description: "Key GDPR documents built around your real processing activities.",
     price: "From €2,000",
     features: [
       "Records of Processing Activities",
-      "Data Protection Impact Assessments",
-      "Annual update service",
+      "DPIA for high-risk activities",
+      "Audit-ready documentation",
     ],
   },
   {
     title: "Website Legal Documentation",
-    description: "Complete legal documents for your online presence",
+    description: "Public-facing legal wording and policies for your website, product, or platform.",
     price: "From €700",
     features: [
-      "Terms of Use & Service",
-      "Privacy & Cookie Policies",
-      "Acceptable Use Policy",
+      "Terms of Use or Terms of Service",
+      "Privacy and Cookie Policies",
+      "AUP and interface legal wording",
     ],
   },
   {
     title: "General Legal Support",
-    description: "Corporate, contracts, and IP advisory services",
+    description: "Corporate, contract, and IP support for privacy-adjacent business needs.",
     price: "From €150/h",
     features: [
-      "Contract drafting & review",
-      "Corporate governance advice",
-      "IP protection guidance",
+      "Contract drafting and review",
+      "Corporate and governance matters",
+      "IP and commercial risk review",
     ],
     highlight: true,
   },
   {
     title: "Enterprise Package",
-    description: "Full-service compliance for larger organizations",
+    description: "Full-scope compliance support for complex or fast-scaling organizations.",
     price: "Custom",
     features: [
-      "All services included",
-      "Dedicated compliance team",
-      "Priority SLA support",
+      "Custom compliance roadmap",
+      "Dedicated support model",
+      "Scope tailored to your needs",
     ],
   },
 ]
@@ -110,30 +110,37 @@ export function PricingSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 bg-accent/10 text-accent text-sm font-semibold rounded-full mb-4">
-            Pricing Plans
+            Pricing plans
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            Simple, Transparent Pricing
+            Simple, transparent pricing
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-            Choose the package that fits your needs. All pricing is tailored to your specific requirements.
+            Choose the scope that fits your stage and workload. No hidden fees, no unnecessary complexity — just clear pricing and practical outcomes.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {pricingPlans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative group transition-all duration-300 border border-border bg-card/80 backdrop-blur-sm hover:-translate-y-2 ${
+              className={`relative group transition-all duration-300 border bg-card/80 backdrop-blur-sm hover:-translate-y-2 ${
                 plan.featured
-                  ? "ring-2 ring-accent shadow-xl shadow-accent/10"
-                  : "hover:shadow-xl hover:shadow-accent/5 hover:border-accent/50"
+                  ? "border-accent ring-2 ring-accent shadow-xl shadow-accent/10"
+                  : plan.highlight
+                    ? "border-amber-400/70 ring-1 ring-amber-300/60 shadow-lg shadow-amber-200/20 hover:shadow-xl hover:shadow-amber-200/30"
+                    : "border-border hover:shadow-xl hover:shadow-accent/5 hover:border-accent/50"
               }`}
             >
               {plan.featured && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-gradient-to-r from-accent to-accent/80 text-accent-foreground text-xs font-semibold rounded-full flex items-center gap-1.5 shadow-lg">
                   <Sparkles className="h-3 w-3" />
-                  Most Popular
+                  Most popular
+                </div>
+              )}
+              {plan.highlight && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-amber-400 text-amber-950 text-xs font-semibold rounded-full shadow-lg">
+                  Beyond privacy
                 </div>
               )}
               <CardHeader className="pb-4">
@@ -149,12 +156,17 @@ export function PricingSection() {
                   <span className="text-3xl font-bold text-foreground">
                     {plan.price}
                   </span>
+                  {plan.title === "General Legal Support" && (
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Customizable depending on the question.
+                    </p>
+                  )}
                 </div>
                 <ul className="space-y-3 mb-6">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center mt-0.5">
-                        <Check className="h-3 w-3 text-accent" />
+                      <div className={`flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5 ${plan.highlight ? "bg-amber-100" : "bg-accent/10"}`}>
+                        <Check className={`h-3 w-3 ${plan.highlight ? "text-amber-700" : "text-accent"}`} />
                       </div>
                       <span className="text-sm text-muted-foreground">
                         {feature}
@@ -165,10 +177,10 @@ export function PricingSection() {
                 <Button
                   asChild
                   variant={plan.featured ? "default" : "outline"}
-                  className={`w-full group/btn ${plan.featured ? "bg-accent hover:bg-accent/90" : ""}`}
+                  className={`w-full group/btn ${plan.featured ? "bg-accent hover:bg-accent/90" : plan.highlight ? "border-amber-400 text-amber-800 hover:bg-amber-50" : ""}`}
                 >
                   <Link href="#contact">
-                    Get Started
+                    Get started
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
