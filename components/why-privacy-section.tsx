@@ -27,17 +27,13 @@ const reasons = [
 export function WhyPrivacySection() {
   return (
     <section className="py-14 md:py-20 bg-secondary relative overflow-hidden">
-      {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-highlight/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 bg-highlight/15 text-foreground text-sm font-semibold rounded-full mb-4 border border-highlight/30">
-            Why it matters
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            Why privacy matters
+            Why privacy matters?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
             In today&apos;s data-driven economy, privacy compliance is not optional – it is essential for sustainable growth. Our CIPP/E certified team brings extensive experience working with technology companies and online businesses.
@@ -50,7 +46,6 @@ export function WhyPrivacySection() {
               key={index}
               className="group relative bg-card rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-border hover:border-accent/30 hover:-translate-y-1"
             >
-              {/* Top gradient bar */}
               <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${reason.color} rounded-t-2xl`} />
               
               <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${reason.iconBg} text-white mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
