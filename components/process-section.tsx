@@ -40,10 +40,10 @@ export function ProcessSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 bg-primary/10 text-foreground text-sm font-semibold rounded-full mb-4 border border-primary/20">
-            Our Process
+            Our process
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            How We Work
+            How we work
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
             A straightforward process designed to get you compliant without disrupting your business.
