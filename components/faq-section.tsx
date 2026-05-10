@@ -6,7 +6,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { HelpCircle } from "lucide-react"
 
 const faqs = [
   {
@@ -47,22 +46,17 @@ const faqs = [
   },
   {
     question: "Can you help with compliance beyond GDPR?",
-    answer: "Yes, while GDPR is our primary focus, we also assist with related regulations like ePrivacy Directive (cookie consent), UK GDPR, and can advise on frameworks like ISO 27001. We take a holistic approach to privacy compliance.",
+    answer: "Yes. In addition to GDPR-related matters, we also assist with privacy-adjacent legal issues, platform documentation, contracts, and broader compliance structuring for online businesses.",
   },
 ]
 
 export function FAQSection() {
   return (
     <section id="faq" className="py-14 md:py-20 bg-background scroll-mt-20 relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-accent/5 via-highlight/5 to-primary/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-highlight/15 text-foreground text-sm font-semibold rounded-full mb-4 border border-highlight/30">
-            <HelpCircle className="h-4 w-4 text-highlight" />
-            Got Questions?
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
             Frequently Asked Questions
           </h2>
