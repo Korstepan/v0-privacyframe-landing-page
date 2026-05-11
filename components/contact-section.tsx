@@ -32,7 +32,7 @@ export function ContactSection() {
             size="lg"
             className="bg-accent text-white hover:bg-accent/90 text-base px-8 py-6 shadow-xl shadow-black/10"
           >
-            <Link href="https://cal.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://cal.com/privacyframe.io/15min" target="_blank" rel="noopener noreferrer">
               <Calendar className="mr-2 h-5 w-5" />
               Book a consultation
               <ArrowRight className="ml-2 h-5 w-5" />
