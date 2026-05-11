@@ -1,20 +1,10 @@
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+
 export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#07111f] via-[#0d2744] to-[#6bbcff] text-white">
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#07111f]/70 border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="/" className="text-2xl font-semibold tracking-tight text-white">
-            PrivacyFrame
-          </a>
-
-          <nav className="hidden md:flex items-center gap-8 text-sm text-white/80">
-            <a href="/#services" className="hover:text-white transition-colors">Services</a>
-            <a href="/#process" className="hover:text-white transition-colors">How we work</a>
-            <a href="/#faq" className="hover:text-white transition-colors">FAQ</a>
-            <a href="/#contact" className="hover:text-white transition-colors">Contact</a>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <div className="max-w-6xl mx-auto px-6 py-24">
         <div className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-10 md:p-16 shadow-2xl shadow-black/20">
@@ -94,9 +84,61 @@ export default function PrivacyPage() {
                 </table>
               </div>
             </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-white mb-5">5. Data Sharing and Categories of Recipients</h2>
+              <p className="mb-5">We may share your data with the following categories of third-parties:</p>
+
+              <ul className="list-disc pl-6 space-y-2 mb-5">
+                <li>Service providers (e.g., hosting, analytics, communication tools) under strict confidentiality and data processing agreements.</li>
+                <li>Legal authorities if required to comply with legal obligations;</li>
+                <li>Third parties in the event of a business transfer or merger, in accordance with applicable laws.</li>
+              </ul>
+
+              <p>We do not sell your personal data.</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-white mb-5">6. Data Retention</h2>
+              <p>We retain personal data only as long as necessary for the purposes described above or as required by law. Once data is no longer needed, it is securely deleted.</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-white mb-5">7. International Data Transfers</h2>
+              <p>We may transfer your personal data to countries outside of your jurisdiction, including to countries that may not provide the same level of data protection as your home country. Thus, where required, we ensure that data transfers outside of the EU to the countries, in relation to which no ‘adequacy’ decision has been made by the European Commission, are subject to appropriate safeguards such as (SCCs) and other mechanisms.</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-white mb-5">8. Your Rights</h2>
+
+              <ul className="list-disc pl-6 space-y-2 mb-5">
+                <li>Right of access: You have a right to access the personal data that we collect and process about you.</li>
+                <li>Right to rectification: If you want to correct or revise any of the data we process on you.</li>
+                <li>Right to be forgotten: You have a right to request the permanent deletion your data. However, please note that exercising this right is also governed by legal and/or contractual retention guidelines.</li>
+                <li>Right to restrict processing: If you believe your personal data is inaccurate or collected unlawfully, you may request limited use of your personal data.</li>
+                <li>Right of portability: We provide you with the ability to move any of your data to a third party at any time.</li>
+                <li>Right to object: If you decide that you no longer wish to allow your data to be included in our analytics, you may contact us to request removal of this data. You may also achieve this by opting out of any marketing outreach that you previously agreed to either by choosing unsubscribe in the related email or by making this selection within your account.</li>
+              </ul>
+
+              <p>To exercise these rights, contact us at sk@privacyframe.io.</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-white mb-5">9. Security Measures</h2>
+              <p>We implement technical and organizational measures to ensure the confidentiality, integrity, and availability of your personal data, including secure hosting, encryption, and access controls.</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-white mb-5">10. Updates to This Policy</h2>
+              <p className="mb-5">We reserve the right to update this Privacy Policy to reflect changes in law or our practices. Updates will be posted on our website with the revised effective date.</p>
+
+              <p>Should you have any queries or need any clarification on our privacy practices – please, email us at sk@privacyframe.io.</p>
+            </section>
           </div>
         </div>
       </div>
+
+      <Footer />
     </main>
   )
 }
