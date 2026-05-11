@@ -77,9 +77,9 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className={`group relative ${service.offset} bg-[#0f1726]/70 backdrop-blur-2xl border border-white/10 overflow-hidden rounded-[28px] transition-all duration-700 hover:-translate-y-4 hover:rotate-[0.4deg] hover:border-accent/40 hover:bg-[#142033]/90 hover:shadow-[0_25px_70px_rgba(0,123,255,0.14)]`}
+              className={`group relative ${service.offset} bg-gradient-to-br from-[#163a5f]/85 via-[#1b4d7e]/82 to-[#2b73b5]/75 backdrop-blur-2xl border border-[#6db6ff]/15 overflow-hidden rounded-[28px] transition-all duration-700 hover:-translate-y-4 hover:rotate-[0.4deg] hover:border-[#86c6ff]/40 hover:shadow-[0_25px_70px_rgba(58,146,255,0.18)]`}
             >
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-br from-accent/5 via-transparent to-primary/5" />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-br from-[#78bcff]/10 via-transparent to-[#4ea1ff]/10" />
 
               <CardContent className="relative p-7 md:p-8 h-full flex flex-col justify-between min-h-[270px]">
                 <div>
@@ -91,14 +91,9 @@ export function ServicesSection() {
                     {service.title}
                   </h3>
 
-                  <p className="text-[15px] leading-6 text-white/75 group-hover:text-white/80 transition-colors duration-500">
+                  <p className="text-[15px] leading-6 text-white/80 group-hover:text-white/85 transition-colors duration-500">
                     {service.description}
                   </p>
-                </div>
-
-                <div className="mt-8 flex items-center gap-2 text-sm text-accent opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
-                  <span>Learn more</span>
-                  <span>→</span>
                 </div>
               </CardContent>
             </Card>
