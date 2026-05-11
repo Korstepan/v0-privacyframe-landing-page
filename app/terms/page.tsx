@@ -1,6 +1,11 @@
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+
 export default function TermsPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#07111f] via-[#0d2744] to-[#6bbcff] text-white">
+      <Header />
+
       <div className="max-w-5xl mx-auto px-6 py-24">
         <div className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-10 md:p-16 shadow-2xl shadow-black/20">
           <h1 className="text-5xl font-bold tracking-tight mb-6">General Terms and Conditions</h1>
@@ -121,6 +126,8 @@ export default function TermsPage() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </main>
   )
 }
