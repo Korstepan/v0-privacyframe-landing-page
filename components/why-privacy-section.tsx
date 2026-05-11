@@ -26,16 +26,13 @@ const reasons = [
 
 export function WhyPrivacySection() {
   return (
-    <section className="py-14 md:py-20 bg-secondary relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-highlight/5 rounded-full blur-3xl" />
-
+    <section className="py-14 md:py-20 relative overflow-hidden bg-background">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
             Why privacy matters?
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-4 text-lg text-white/75 leading-relaxed">
             In today&apos;s data-driven economy, privacy compliance is not optional – it is essential for sustainable growth. Our CIPP/E certified team brings extensive experience working with technology companies and online businesses.
           </p>
         </div>
@@ -44,17 +41,19 @@ export function WhyPrivacySection() {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="group relative bg-card rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-border hover:border-accent/30 hover:-translate-y-1"
+              className="group relative bg-gradient-to-br from-[#163a5f]/85 via-[#1b4d7e]/82 to-[#2b73b5]/75 rounded-[28px] p-8 border border-[#6db6ff]/15 hover:border-[#86c6ff]/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_70px_rgba(58,146,255,0.18)] backdrop-blur-xl"
             >
-              <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${reason.color} rounded-t-2xl`} />
-              
-              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${reason.iconBg} text-white mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${reason.color} rounded-t-[28px]`} />
+
+              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${reason.iconBg} text-white mb-6 shadow-lg group-hover:scale-105 transition-transform duration-300`}>
                 <reason.icon className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+
+              <h3 className="text-xl font-semibold text-white mb-3">
                 {reason.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+
+              <p className="text-white/75 leading-relaxed">
                 {reason.description}
               </p>
             </div>
