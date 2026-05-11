@@ -29,10 +29,10 @@ export function WhyPrivacySection() {
     <section className="py-14 md:py-20 relative overflow-hidden bg-background">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0b1b2b] tracking-tight">
             Why privacy matters?
           </h2>
-          <p className="mt-4 text-lg text-white/75 leading-relaxed">
+          <p className="mt-4 text-lg text-[#17324d] leading-relaxed">
             In today&apos;s data-driven economy, privacy compliance is not optional – it is essential for sustainable growth. Our CIPP/E certified team brings extensive experience working with technology companies and online businesses.
           </p>
         </div>
