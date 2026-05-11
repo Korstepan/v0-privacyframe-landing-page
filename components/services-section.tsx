@@ -43,18 +43,19 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="relative py-16 md:py-28 scroll-mt-20 overflow-hidden">
+    <section id="services" className="relative py-20 md:py-32 scroll-mt-20 overflow-hidden">
       <div className="absolute inset-0">
         <Image
           src="/images/services-bg.jpg"
           alt=""
           fill
-          className="object-cover opacity-25"
+          className="object-cover opacity-20 scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       </div>
 
-      <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute top-10 left-1/4 w-[420px] h-[420px] bg-accent/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-0 right-1/4 w-[320px] h-[320px] bg-primary/10 rounded-full blur-3xl animate-pulse" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20">
@@ -66,22 +67,35 @@ export function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group bg-card/60 backdrop-blur-xl border border-white/5 hover:border-accent/40 hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 rounded-3xl overflow-hidden"
+              className={`group relative bg-white/[0.03] backdrop-blur-2xl border border-white/10 overflow-hidden rounded-[32px] transition-all duration-700 hover:-translate-y-4 hover:rotate-[0.5deg] hover:border-accent/40 hover:shadow-[0_30px_80px_rgba(0,123,255,0.18)] ${index % 2 === 1 ? "lg:translate-y-10" : ""}`}
             >
-              <CardContent className="p-8">
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${service.color} text-white mb-6 shadow-xl group-hover:scale-110 transition-transform duration-500`}>
-                  <service.icon className="h-8 w-8" />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-br from-accent/10 via-transparent to-primary/10" />
+
+              <div className="absolute -top-16 -right-16 w-40 h-40 rounded-full bg-white/5 blur-3xl group-hover:bg-accent/10 transition-all duration-700" />
+
+              <CardContent className="relative p-8 md:p-10 h-full flex flex-col justify-between min-h-[320px]">
+                <div>
+                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${service.color} text-white mb-8 shadow-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
+                    <service.icon className="h-8 w-8" />
+                  </div>
+
+                  <h3 className="text-2xl font-semibold text-card-foreground mb-4 tracking-tight leading-tight group-hover:text-white transition-colors duration-500">
+                    {service.title}
+                  </h3>
+
+                  <p className="text-muted-foreground text-[15px] leading-7 group-hover:text-white/80 transition-colors duration-500">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold text-card-foreground mb-3 tracking-tight">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {service.description}
-                </p>
+
+                <div className="mt-10 flex items-center gap-2 text-sm text-accent opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-500">
+                  <span>Learn more</span>
+                  <span>→</span>
+                </div>
               </CardContent>
             </Card>
           ))}
