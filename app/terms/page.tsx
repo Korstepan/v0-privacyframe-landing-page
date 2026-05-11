@@ -4,7 +4,7 @@ export default function TermsPage() {
       <div className="max-w-5xl mx-auto px-6 py-24">
         <div className="backdrop-blur-xl bg-white/[0.04] border border-white/10 rounded-3xl p-10 md:p-16 shadow-2xl shadow-black/20">
           <h1 className="text-5xl font-bold tracking-tight mb-6">General Terms and Conditions</h1>
-          <p className="text-white/60 mb-14">Effective Date: [Insert Date]</p>
+          <p className="text-white/60 mb-14">Effective Date: May 11, 2026</p>
 
           <div className="space-y-12 text-white/80 leading-8 text-[15px]">
             <section>
